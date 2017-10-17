@@ -1,0 +1,51 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>Yasharki.NET</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function anima() {
+
+                    var away = $('.goaway');
+                    away.animate({'font-size': '100px', 'opacity': '1.0'}, 8000);
+                    away.animate({'font-size': '20px', 'opacity': '0.4'}, 4000);
+
+                    setTimeout(function(){anima()},1000);
+            }
+
+            anima();
+        });
+    </script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .goaway {
+            color: green;
+            font-size: 20px;
+            opacity: 0.4;
+        }
+
+        .deadcenter {
+            width: 400px;
+            height: 400px;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="deadcenter">
+    <p class="goaway">got r00t?</p>
+</div>
+</body>
+</html>
