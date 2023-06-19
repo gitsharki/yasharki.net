@@ -1,5 +1,6 @@
 <!doctype HTML>
 <html>
+
 <head>
     <title>Yasharki.COM</title>
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -8,32 +9,32 @@
         $(document).ready(function () {
             function anima() {
 
-                    var away = $('.goaway');
-                    away.animate({'font-size': '100px', 'opacity': '1.0'}, 8000);
-                    away.animate({'font-size': '20px', 'opacity': '0.4'}, 4000);
+                var away = $('.goaway');
+                away.animate({ 'font-size': '100px', 'opacity': '1.0' }, 8000);
+                away.animate({ 'font-size': '20px', 'opacity': '0.4' }, 4000);
 
-                    setTimeout(function(){anima()},1000);
+                setTimeout(function () { anima() }, 1000);
             }
 
             anima();
         });
     </script>
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//matomo.yasharki.com/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://matomo.yasharki.com/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
 
     <style>
         body {
@@ -58,11 +59,30 @@
 
             margin: auto;
         }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+        }
+
+        .link a {
+            color: green;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
     </style>
 </head>
+
 <body>
-<div class="deadcenter">
-    <p class="goaway">got r00t?</p>
-</div>
+    <div class="deadcenter">
+        <p class="goaway">got r00t?</p>
+    </div>
+    <div class="bottom-right">
+        <p class="link"><a href="/resume">&copy; Kirill Kokoshko</a>/</p>
+    </div>
 </body>
+
 </html>
