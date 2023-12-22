@@ -1,5 +1,3 @@
-# yasharki.net
+# yasharki.com
 
-Yasharki.NET homepage
-
-# Comment by Jenkins!
+Yasharki.COM homepage
